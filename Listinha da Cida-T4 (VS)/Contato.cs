@@ -31,14 +31,16 @@ namespace Listinha_da_Cida_T4__VS_
         public string Telefone
         {
             get { return telefone; }
-            set 
-            {
+            set
+            { 
                 if (value.Length == 11)
 
                     Telefone = value;
                 else
-                    Telefone = "00-00000-0000";
-             }   
+                { 
+                    Telefone = "00000000000";
+                }
+            }
         }
 
         //Método construtor da classe
@@ -59,6 +61,13 @@ namespace Listinha_da_Cida_T4__VS_
         public override string ToString()
         {
             string saída = String.Empty;
+            saída += String.Format("{0}, {1}", PrimeiroNome, Sobrenome);
+            saída += String.Format("{0}-{1}-{2}",
+                Telefone.Substring(0, 1),
+                Telefone.Substring(2, 4),
+                Telefone.Substring(7, 3));
+
+            return saída;
         }
     }
 }

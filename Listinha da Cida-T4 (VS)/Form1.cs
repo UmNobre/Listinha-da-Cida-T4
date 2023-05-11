@@ -45,8 +45,18 @@ namespace Listinha_da_Cida_T4__VS_
         private void button1_Click(object sender, EventArgs e)
         {
             // Criar nosso primeiro contato (um OBJETO da classe Contato).
-            Contato obejtoContato = new Contato();
-            lstContatos.Items.Add(obejtoContato.ToString());
+            Contato objetoContato = new Contato();
+            lstContatos.Items.Add(objetoContato.ToString());
+        }
+
+        private void txtNome_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lstContatos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
