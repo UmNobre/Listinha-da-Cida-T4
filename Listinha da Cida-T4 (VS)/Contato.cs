@@ -54,10 +54,7 @@ namespace Listinha_da_Cida_T4__VS_
         //Método construtor da classe
         public Contato()
         {
-            PrimeiroNome = "José";
-            Sobrenome = "Pinto";
-            Telefone = "00000000000";
-            Mail = "josepinto@gmail.com";
+           
         }
 
         //sobrecarga do método construtor da classe
